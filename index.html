@@ -22,17 +22,17 @@
 
     
 
-    <div class="container">
-        <header class="d-flex flex-wrap justify-content-center py-3 mb-4 border-bottom">
+    <div class="container-fluid fixed-top ">
+        <header class="d-flex flex-wrap justify-content-center py-2  border-bottom">
           <a href="/" class="d-flex align-items-center mb-3 mb-md-0 me-md-auto link-body-emphasis text-decoration-none">
             <svg class="bi me-2" width="40" height="32"><use xlink:href="#bootstrap"></use></svg>
             <span class="fs-4">Gourmet au Catering</span>
           </a>
     
           <ul class="nav nav-pills">
-            <li class="nav-item"><a href="#" class="btn btn-list btn-light text-dark me-2" aria-current="page">About</a></li>
-            <li class="nav-item"><a href="#" class="nav-link">Menu</a></li>
-            <li class="nav-item"><a href="#" class="nav-link">Contact</a></li>
+            <li class="nav-item"><a href="#" class="btn btn-list btn-light text-dark me-2" aria-current="page" style="letter-spacing: 2px;">About</a></li>
+            <li class="nav-item"><a href="#" class="btn btn-list btn-light text-dark me-2">Menu</a></li>
+            <li class="nav-item"><a href="#" class="btn btn-list btn-light text-dark me-2">Contact</a></li>
            
           </ul>
         </header>
@@ -58,17 +58,17 @@
 
      <!-- About us section -->
 
-     <div class="container text-center py-5 d-flex px-5 mt-4  w3-padding-64 ">
+     <div class="container-fluid text-center py-5 d-flex px-5 mt-4  w3-padding-64 ">
 
         <div class="row text-center justify-content-center px-2">
 
-          <div class="col-lg-6">
+          <div class="col-md-6 ">
 
-            <img src="./tablesetting2.jpg" alt="table" style="width:500px;height:600px;opacity: 0.75; border-radius: 4px; padding-right: 60px;">
+            <img src="./tablesetting2.jpg" alt="table" class="img-fluid" style="width:600;height: 750;">
 
           </div>
 
-          <div class="col-lg-6 text-center align-items-center justify-content-start ">
+          <div class="col-md-6 text-center align-items-center justify-content-start ">
 
             <h1 class="pb-4">About Catering</h1>
 
@@ -151,7 +151,7 @@
 
     <div class="p-2 banner1">
 
-        <img src="./tablesetting1.jpg" alt="table" style="opacity: 0.75;">
+        <img src="./tablesetting1.jpg" alt="table" class="img-fluid" style="opacity: 0.75; border-radius: 4px;">
 
     </div>
     
@@ -159,37 +159,85 @@
 
   <!-- contact us -->
 
-  <div class="container-fluid ">
+  <div class="container-fluid my-5 px-5 ">
 
-    <h1>Contact</h1>
+    <div>
 
-    <p>We offer full-service catering for any event, large or small. We understand your needs and we will cater the food to satisfy the biggerst criteria of them all, both look and taste. Do not hesitate to contact us.</p>
+    <h1 class="text-lg-start mb-5">Contact</h1>
 
-    <h3>Catering Service, 42nd Living St, 43043 New York, NY</h3>
+    <p style="font-family:Times New Roman, Georgia, Serif; font-size: 15px; line-height: 1.5;">We offer full-service catering for any event, large or small. We understand your needs and we will cater the food to satisfy the biggerst criteria of them all, both look and taste. Do not hesitate to contact us.</p>
 
-    <p>You can also contact us by phone 00553123-2323 or email catering@catering.com, or you can send us a message here:
+    <p class="w3-text-blue-grey"> <b>Service, 42nd Living St, 43043 New York, NY</b> </p>
+
+    <p style="font-family:Times New Roman, Georgia, Serif; font-size: 15px; line-height: 1.5;">You can also contact us by phone 00553123-2323 or email catering@catering.com, or you can send us a message here:
 
     </p>
 
+    </div>
+
+
     <!-- contact form -->
 
-    <form action="#">
+
+    <!-- <div class="my-3">
+
+      <div class="mb-3 w3-padding-16 w3-input">
 
         
-        <input type="text" placeholder="Name"><br>
+        <input type="text" class="form-control" id="formGroupExampleInput" placeholder="Name">
+      </div>
+      <div class="mb-3 w3-input">
 
-        <input type="text" placeholder="How Many people"><br>
+        
+        <input type="text" class="form-control" id="formGroupExampleInput2" placeholder="How Many People">
+      </div>
+      <div class="mb-3 w3-input">
 
-        <input type="calender"><br>
+        
+        <input class="w3-input w3-padding-16" type="datetime-local" placeholder="Date and time" required="" name="date" value="2020-11-16T20:00">
+        
+      </div>
+      <div class="w3-padding-16 w3-input">
 
-        <input type="text" placeholder="Message/Special Requirement"><br>
+        
 
-        <button>Send Message</button>
+        <input type="text" class="form-control" id="formGroupExampleInput2" placeholder="Message/ Special Requirment">
+      </div>
 
+      <div class="mb-3 w3-padding-16">
 
-    </form>
+        
 
-  </div>
+        <button class="w3-button w3-light-grey w3-section" type="submit">SEND MESSAGE</button>
+
+      </div>
+
+    </div> -->
+    
+
+ </div>
+
+ <!-- 2nd form using form tag -->
+
+ <div class="px-5">
+
+  <form action="/action_page.php" target="_blank">
+
+    <p><input class="w3-input w3-padding-16" type="text" placeholder="Name" required="" name="Name"></p>
+  
+    <p><input class="w3-input w3-padding-16" type="number" placeholder="How many people" required="" name="People"></p>
+  
+    <p><input class="w3-input w3-padding-16" type="datetime-local" placeholder="Date and time" required="" name="date" value="2020-11-16T20:00"></p>
+  
+    <p><input class="w3-input w3-padding-16" type="text" placeholder="Message \ Special requirements" required="" name="Message"></p>
+  
+    <p><button class="w3-button w3-light-grey w3-section my-2 border" type="submit">SEND MESSAGE</button></p>
+  
+  </form>
+
+ </div>
+
+ 
 
   <!-- footer -->
 

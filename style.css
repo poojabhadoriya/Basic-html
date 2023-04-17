@@ -11,17 +11,24 @@
 
         .banner
         {
-            max-width: 100%;
+            width: 100%;
             height: 700px;
             /* background-color: red; */
             background-image: url('./hamburger.jpg');
             background-position: fixed;
             background-repeat: no-repeat;
             background-size: cover;
-            margin-top: -35px;
+            /* margin-top: 105px; */
             position: relative;
+            z-index: -1 !important;
            
 
+        }
+        .fixed-top
+        {
+            background-color: white;
+            z-index: 999;
+            width: 100% !important;
         }
     
         .abs-heading{
@@ -93,10 +100,96 @@
             color: #000;
         }
         a:link{
-            color: black;
+            color: black !important;
             outline-width: 0;
         }
         a:hover{
             color:green;
 
         }
+        .my-5
+        {
+            margin-top: 150px !important;
+            margin-bottom: 20px;
+
+        }
+        .px-5
+        {
+            padding-left: 20px;
+            padding-right: 20px;
+        }
+        .w3-text-blue-grey
+        {
+            color: #607d8b!important;
+            font-size: 18px !important;
+            font-family:Times New Roman, Georgia, Serif;
+        }
+        /* input[type=text]
+        {
+            padding: 12px 20px;
+            margin: 8px 6px;
+            border-bottom: 2px solid grey;
+            border-top: none;
+            border-left: none;
+            border-right: none;
+            padding: 8px;
+            display: block;
+            width: 100%;
+
+        }
+        input[type=text]:focus
+        {
+            border: 3px solid red;
+            border-radius: 7px;
+        } */
+        .my-3
+        {
+            margin-top: 50px !important;
+            margin-bottom: 50px !important;
+        }
+        .w3-padding-16
+        {
+            padding-top: 16px !important;
+            padding-bottom: 16px !important;
+        }
+        .w3-input {
+            padding: 8px;
+            display: block;
+            border-bottom: 1px solid grey;
+            border-top: none !important;
+            border-left: none !important;
+            border-right: none !important;
+            width: 100%;
+        }
+        .my-2
+        {
+            margin-top: 20px !important;
+            margin-bottom: 60px !important;
+        }
+        .border
+        {
+            border:none;
+            background-color: grey;
+            padding: 10px;
+        }
+        h4{
+            font-family: "Playfair Display";
+            letter-spacing: 5px;
+            font-weight: 400;
+            margin: 10px 
+        }
+        h6{
+            color: #757575!important;
+        }
+        @media (min-width: 601px)
+        {
+            .col.md-6, .w3-half {
+                width: 49.99999%;
+            }
+
+        }
+        img
+        {
+            vertical-align: middle !important;
+        }
+
