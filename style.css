@@ -1,0 +1,102 @@
+.btn-list
+        {
+            /* background-color: red; */
+            border-radius: 0;
+        }
+        .btn-list:hover
+        {
+            background-color: #ccc!important;
+            border-radius: 0;
+        }
+
+        .banner
+        {
+            max-width: 100%;
+            height: 700px;
+            /* background-color: red; */
+            background-image: url('./hamburger.jpg');
+            background-position: fixed;
+            background-repeat: no-repeat;
+            background-size: cover;
+            margin-top: -35px;
+            position: relative;
+           
+
+        }
+    
+        .abs-heading{
+            position: absolute;
+            top:625px;
+            font-size: 36px !important;
+            letter-spacing: 5px;
+            font-family: "Playfair Display";
+        }
+        /* .px-2
+        {
+            padding-left: 10px !important;
+            padding-right: 10px !important;
+        } */
+        .w3-large
+        {
+            font-size: 18px !important;
+            font-family: 'Times New Roman', Georgia, serif;
+        }
+        h1,h5{
+            text-align: center !important;
+            font-family: "Playfair Display";
+            letter-spacing: 5px;
+        }
+        .w3-text-grey
+        {
+            color:#757575!important;
+
+        }
+        .w3-padding-64
+        {
+            padding-top: 64px !important;
+            padding-bottom: 64 !important;
+        }
+        .w3-light-grey
+        {
+            background-color: #f1f1f1!important;
+            color: #000!important;
+        }
+        .px-5
+        {
+            padding-left: 180px !important;
+            padding-right: 180px !important;
+
+        }
+        .sec
+        {
+            letter-spacing: 8px !important;
+            font-weight: 400;
+            text-align: start;
+            padding-bottom: 10px !important;
+            font-size: 18px;
+        }
+        .p-2
+        {
+            padding-right: 60px !important;
+        }
+
+        .px-5
+        {
+            padding-left: 800px;
+        }
+        .bg-footer
+        {
+            width: 100%;
+            padding: 40px;
+            height: 200%;
+            background-color: #f1f1f1!important;
+            color: #000;
+        }
+        a:link{
+            color: black;
+            outline-width: 0;
+        }
+        a:hover{
+            color:green;
+
+        }
